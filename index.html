@@ -14,17 +14,25 @@
 
     <header>
 
-        <h2>IPL 2026</h2>
+    <h2>IPL 2026</h2>
 
-        <nav>
-            <a href="#matches">Matches</a> |
-            <a href="#booking">Book Ticket</a> |
-            <a href="#mybookings">My Bookings</a> |
-            <a href="#guidelines">Guidelines</a>
-            <a href="booking.html">Ticket Booking Form</a>
-        </nav>
+    <button id="menuButton" class="menu-button">☰</button>
 
-    </header>
+    <nav id="navbar">
+
+        <a href="#matches">Matches</a>
+
+        <a href="#booking">Book Ticket</a>
+
+        <a href="#mybookings">My Bookings</a>
+
+        <a href="#guidelines">Guidelines</a>
+
+        <a href="booking.html">Ticket Booking Form</a>
+
+    </nav>
+
+</header>
 
 
     <section id="home">
@@ -105,72 +113,103 @@
 
         <br><br>
 
-        <table border="1">
+        
 
-            <thead>
+          
+<!-- Grid and List View Buttons -->
 
-                <tr>
-                    <th>Match Number</th>
-                    <th>Teams</th>
-                    <th>Date & Time</th>
-                    <th>Venue</th>
-                    <th>General</th>
-                    <th>Premium</th>
-                    <th>VIP</th>
-                    <th>Action</th>
-                </tr>
+<div class="view-buttons">
 
-            </thead>
+    <button id="gridView">Grid View</button>
 
-            <tbody>
+    <button id="listView">List View</button>
 
-                <tr>
-                    <td>1</td>
-                    <td>CSK vs MI</td>
-                    <td>10 April 2026, 7:30 PM</td>
-                    <td>Chennai</td>
-                    <td>₹800</td>
-                    <td>₹1500</td>
-                    <td>₹3000</td>
-                    <td><a href="#booking">Book</a></td>
-                </tr>
+</div>
 
-                <tr>
-                    <td>2</td>
-                    <td>RCB vs KKR</td>
-                    <td>12 April 2026, 7:30 PM</td>
-                    <td>Bengaluru</td>
-                    <td>₹900</td>
-                    <td>₹1800</td>
-                    <td>₹3500</td>
-                    <td><a href="#booking">Book</a></td>
-                </tr>
 
-                <tr>
-                    <td>3</td>
-                    <td>MI vs KKR</td>
-                    <td>15 April 2026, 3:30 PM</td>
-                    <td>Mumbai</td>
-                    <td>₹700</td>
-                    <td>₹1400</td>
-                    <td>₹2800</td>
-                    <td><a href="#booking">Book</a></td>
-                </tr>
+<!-- Match Cards -->
 
-                <tr>
-                    <td>4</td>
-                    <td>SRH vs RR</td>
-                    <td>18 April 2026, 7:30 PM</td>
-                    <td>Hyderabad</td>
-                    <td>₹750</td>
-                    <td>₹1600</td>
-                    <td>₹3200</td>
-                    <td><a href="#booking">Book</a></td>
-                </tr>
+<div id="matchContainer" class="match-container">
 
-            </tbody>
+    <div class="match-card" data-teams="CSK MI">
 
-        </table>
+        <h3>Match 1: CSK vs MI</h3>
+
+        <p>Date: 10 April 2026, 7:30 PM</p>
+
+        <p>Venue: Chennai</p>
+
+        <p>General: ₹800</p>
+
+        <p>Premium: ₹1500</p>
+
+        <p>VIP: ₹3000</p>
+
+        <a href="#booking">Book Ticket</a>
+
+    </div>
+
+
+    <div class="match-card" data-teams="RCB KKR">
+
+        <h3>Match 2: RCB vs KKR</h3>
+
+        <p>Date: 12 April 2026, 7:30 PM</p>
+
+        <p>Venue: Bengaluru</p>
+
+        <p>General: ₹900</p>
+
+        <p>Premium: ₹1800</p>
+
+        <p>VIP: ₹3500</p>
+
+        <a href="#booking">Book Ticket</a>
+
+    </div>
+
+
+    <div class="match-card" data-teams="MI KKR">
+
+        <h3>Match 3: MI vs KKR</h3>
+
+        <p>Date: 15 April 2026, 3:30 PM</p>
+
+        <p>Venue: Mumbai</p>
+
+        <p>General: ₹700</p>
+
+        <p>Premium: ₹1400</p>
+
+        <p>VIP: ₹2800</p>
+
+        <a href="#booking">Book Ticket</a>
+
+    </div>
+
+
+    <div class="match-card" data-teams="SRH RR">
+
+        <h3>Match 4: SRH vs RR</h3>
+
+        <p>Date: 18 April 2026, 7:30 PM</p>
+
+        <p>Venue: Hyderabad</p>
+
+        <p>General: ₹750</p>
+
+        <p>Premium: ₹1600</p>
+
+        <p>VIP: ₹3200</p>
+
+        <a href="#booking">Book Ticket</a>
+
+    </div>
+
+</div>
+
+
+        
 
         <p>
             Note: Match dates and ticket prices are illustrative
@@ -298,10 +337,11 @@
 
     <section id="guidelines">
 
-        <h2>Stadium Guidelines</h2>
+    <h2>Stadium Guidelines</h2>
+
+    <div class="guidelines-container">
 
         <article>
-
             <h3>Ticket Verification</h3>
 
             <p>
@@ -309,22 +349,18 @@
                 the stadium. Tickets will be verified
                 at the entrance.
             </p>
-
         </article>
 
         <article>
-
             <h3>ID Proof Requirement</h3>
 
             <p>
                 Visitors must carry a valid government-issued
                 identity proof for verification.
             </p>
-
         </article>
 
         <article>
-
             <h3>Prohibited Items</h3>
 
             <p>
@@ -332,11 +368,11 @@
                 and other restricted items are not allowed
                 inside the stadium.
             </p>
-
         </article>
 
-    </section>
+    </div>
 
+</section>
 
     <!-- FOOTER -->
 
